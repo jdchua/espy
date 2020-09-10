@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.gridList {
+  width: 95%;
+  height: auto;
+  overflow-y: auto;
+}
+body {
+  background-color: #cccccc26;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gridListImgs {
+  width: 95%;
+  flex-wrap: nowrap !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loadingSpinner {
+  position: absolute;
+  top: 40%;
+  left: 45%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.root {
+  margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.topImages {
+  height: 325px;
+  width: 100%;
+}
+
+.subreddit_header {
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Fjalla One';
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.subreddit_img {
+  margin-top: 22px;
+  margin-left: 7px;
+  height:60px !important;
+  width: 60px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hotImages {
+  height: 180px;
+  width: 100%;
+}
+
+.newImages {
+  height: 250px;
+  width: 100%;
+}
+
+.firstImage {
+  width: 100%;
+}
+
+#root header{
+  background-color: #2e0c40;
+}
+
+.typePosts {
+  width: 90%;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 700px) {
+  .hotImages {
+    height: 225px;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 992px) {
+  .gridList, .gridList1 {
+    width: 65%;
   }
 }
