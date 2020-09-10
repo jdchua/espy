@@ -19,7 +19,7 @@ body {
 }
 
 .root {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -34,6 +34,7 @@ body {
   width: 100%;
   justify-content: center;
   font-family: 'Fjalla One';
+  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
@@ -60,15 +61,35 @@ body {
 }
 
 #root header{
-  background-color: #2e0c40;
+  background-color: black;
 }
 
 .typePosts {
-  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 33%;
+  border-bottom: 3px black solid;
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
   letter-spacing: 1px;
   padding-bottom: 5px;
+}
+
+.hotIcon, .newIcon, .topIcon {
+  margin-bottom: -5px;
+  margin-left: 5px;
+}
+
+.hotIcon {
+  color: red;
+}
+
+.newIcon {
+  color: green;
+}
+
+.topIcon {
+  color: purple;
 }
 
 @media only screen and (min-width: 700px) {
@@ -76,10 +97,23 @@ body {
     height: 225px;
     width: 100%;
   }
-}
+  .typePosts {
+    width: 20%;
+  }
 
-@media only screen and (min-width: 992px) {
   .gridList, .gridListImgs {
     width: 65%;
+  }
+
+  
+}
+
+@media only screen and (min-width: 900px) {
+  .gridList, .gridListImgs {
+    width: 60%;
+  }
+
+  .typePosts {
+    width: 15%;
   }
 }

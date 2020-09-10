@@ -24,6 +24,8 @@ npm install
 
 * Load data and images without refreshing page.
 
+* Click on images to zoom in and to have the option to download image.
+
 * Responsive web design.
 
 ## Built With

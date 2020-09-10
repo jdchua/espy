@@ -5,6 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import Avatar from '@material-ui/core/Avatar';
 import 'react-responsive-modal/styles.css';
 import ModalImage from "react-modal-image";
+import WhatshotIcon from '@material-ui/icons/Whatshot';
 
 class Hot extends React.Component {
     constructor(props){
@@ -58,18 +59,18 @@ class Hot extends React.Component {
         return (
           <div>
             <div className="subreddit_header" style={{display: this.state.searchTerm !== "" ? "flex" : "none" }}><h1>{this.state.subreddit} Subreddit</h1><Avatar className="subreddit_img" alt="profile pic" src={this.state.subredditImg}/></div>
+            <h3 className="typePosts" style={{display: this.state.searchTerm !== "" ? "block" : "none" }}>Hot Posts<WhatshotIcon className="hotIcon"/></h3>
             <div className="root">
-                <h3 className="typePosts" style={{display: this.state.searchTerm !== "" ? "block" : "none" }}>Hot Posts </h3>
                 <GridList spacing={7} className="gridList" cols={3} >
-                  {this.state.images.map((tile, index) => (
-                    <GridListTile rows={index === 0 ? 2 : 1} cols={index === 0 ? 3 : 1}>
-                        <ModalImage
-                          className={index !== 0 ? "hotImages" : "firstImage"}
-                          small={tile.url}
-                          large={tile.url}
-                        />
-                    </GridListTile>
-                  ))}
+                    {this.state.images.map((tile, index) => (
+                      <GridListTile rows={index === 0 ? 2 : 1} cols={index === 0 ? 3 : 1}>
+                          <ModalImage
+                            className={index !== 0 ? "hotImages" : "firstImage"}
+                            small={tile.url}
+                            large={tile.url}
+                          />
+                      </GridListTile>
+                    ))}
                 </GridList>
             </div>
           </div>
