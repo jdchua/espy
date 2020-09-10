@@ -1,5 +1,5 @@
 # espy.
-<img src="https://i1.lensdump.com/i/0isIT7.png" alt="0isIT7.png" border="0" />
+<img src="https://i1.lensdump.com/i/0iMRNA.png" alt="0iMRNA.png" border="0" />
 
 Web application built with React, Material UI, and Reddit’s API to grab the Top, Hot, and New images of any subreddit.
 
